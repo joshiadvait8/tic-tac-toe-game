@@ -33,6 +33,9 @@ export default class App extends React.Component {
     if (this.state.winGame.includes("wins")) {
       Alert.alert("Hurray.." + this.state.winGame + " !!!");
       this.resetGame();
+    } else if (this.state.winGame.includes("Draw")) {
+      Alert.alert(this.state.winGame + " !!!");
+      this.resetGame();
     }
   };
 
